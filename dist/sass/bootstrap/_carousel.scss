@@ -211,6 +211,12 @@
   margin: 0 auto;
   h3 {
     color: $gray-dark;
+    font-size: 28px;
+    font-family: 'montserratregular';
+    padding-bottom: 14px;
+  }
+  p {
+    line-height: 1.5;
   }
   & .btn {
     text-shadow: none; // No shadow for button elements in carousel-caption

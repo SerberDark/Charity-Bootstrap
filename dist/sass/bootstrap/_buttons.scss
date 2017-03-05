@@ -71,6 +71,8 @@ a.btn {
   @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
 }
 .btn-primary {
+  border: 2px solid;
+  font-family: 'montserratregular';
   @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
 }
 // Success appears as green
@@ -88,6 +90,10 @@ a.btn {
 // Danger and error appear as red
 .btn-danger {
   @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+}
+// Shop
+.btn-shop {
+  @include button-variant($btn-shop-color, $btn-shop-bg, $btn-shop-border);
 }
 
 
