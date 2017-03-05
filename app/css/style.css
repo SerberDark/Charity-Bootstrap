@@ -3098,6 +3098,43 @@ fieldset[disabled] a.btn {
     color: #d9534f;
     background-color: #fff; }
 
+.btn-shop {
+  color: #fff;
+  background-color: #150c31;
+  border-color: #150c31; }
+  .btn-shop:focus, .btn-shop.focus {
+    color: #fff;
+    background-color: #030208;
+    border-color: black; }
+  .btn-shop:hover {
+    color: #fff;
+    background-color: #030208;
+    border-color: black; }
+  .btn-shop:active, .btn-shop.active,
+  .open > .btn-shop.dropdown-toggle {
+    color: #fff;
+    background-color: #030208;
+    border-color: black; }
+    .btn-shop:active:hover, .btn-shop:active:focus, .btn-shop:active.focus, .btn-shop.active:hover, .btn-shop.active:focus, .btn-shop.active.focus,
+    .open > .btn-shop.dropdown-toggle:hover,
+    .open > .btn-shop.dropdown-toggle:focus,
+    .open > .btn-shop.dropdown-toggle.focus {
+      color: #fff;
+      background-color: black;
+      border-color: black; }
+  .btn-shop:active, .btn-shop.active,
+  .open > .btn-shop.dropdown-toggle {
+    background-image: none; }
+  .btn-shop.disabled:hover, .btn-shop.disabled:focus, .btn-shop.disabled.focus, .btn-shop[disabled]:hover, .btn-shop[disabled]:focus, .btn-shop[disabled].focus,
+  fieldset[disabled] .btn-shop:hover,
+  fieldset[disabled] .btn-shop:focus,
+  fieldset[disabled] .btn-shop.focus {
+    background-color: #150c31;
+    border-color: #150c31; }
+  .btn-shop .badge {
+    color: #150c31;
+    background-color: #fff; }
+
 .btn-link {
   color: #807996;
   font-weight: normal;
@@ -6301,8 +6338,55 @@ button {
     line-height: 1.6;
     font-size: 14px;
     color: #807996; }
-  .section-g-bg .btn-shop {
+  .section-g-bg .btn-shop-holder {
     padding-top: 35px; }
+    .section-g-bg .btn-shop-holder .btn-shop {
+      padding-left: 65px;
+      padding-right: 65px; }
+
+.col-5 {
+  width: 20%;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  float: left; }
+
+.donor .best-donors .donor-holder {
+  text-align: center; }
+  .donor .best-donors .donor-holder .title-donor {
+    padding-top: 14px; }
+    .donor .best-donors .donor-holder .title-donor span {
+      font-size: 18px;
+      color: #150c31;
+      font-family: 'montserratregular'; }
+    .donor .best-donors .donor-holder .title-donor p {
+      font-size: 14px;
+      color: #807996; }
+
+footer {
+  background: #202020;
+  line-height: 6; }
+  footer .rights > * {
+    color: #807996;
+    font-size: 12px; }
+  footer .link-holder ul {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
+    footer .link-holder ul li + li {
+      padding-left: 3px; }
+      footer .link-holder ul li + li::before {
+        content: '';
+        height: 2px;
+        width: 2px;
+        background: #e1e1e1;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 3px; }
+    footer .link-holder ul a {
+      font-size: 12px;
+      color: #fff; }
 
 /* Preload images */
 body:after {

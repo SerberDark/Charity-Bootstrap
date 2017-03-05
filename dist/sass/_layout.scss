@@ -129,7 +129,6 @@
   }
 }
 
-
 .section-w-bg {
   padding: 50px 0;
   min-height: 480px;
@@ -237,5 +236,68 @@
   }
   .btn-shop-holder {
     padding-top: 35px;
+    .btn-shop {
+      padding-left: 65px;
+      padding-right: 65px;
+    }
+  }
+}
+.col-5 {
+  width: 20%;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  float: left;
+}
+
+.donor {
+  .best-donors {
+    .donor-holder {
+      text-align: center;
+      .title-donor {
+        padding-top: 14px;
+        & span {
+          font-size: 18px;
+          color: #150c31;
+          font-family: 'montserratregular';
+        }
+        & p {
+          font-size: 14px;
+          color: #807996;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background: #202020;
+  line-height: 6;
+  .rights {
+    & > * {
+      color: #807996;
+      font-size: 12px;
+    }
+  }
+  .link-holder {
+    & ul {
+      display: inline-flex;
+      & li + li {
+        padding-left: 3px;
+        &::before  {
+          content: '';
+          height: 2px;
+          width: 2px;
+          background: #e1e1e1;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 3px;
+        }
+      }
+      & a {
+        font-size: 12px;
+        color: #fff;
+      }
+    }
   }
 }
