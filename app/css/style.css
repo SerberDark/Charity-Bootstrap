@@ -6375,7 +6375,7 @@ footer {
     display: -ms-inline-flexbox;
     display: inline-flex; }
     footer .link-holder ul li + li {
-      padding-left: 3px; }
+      padding-left: 4px; }
       footer .link-holder ul li + li::before {
         content: '';
         height: 2px;
@@ -6383,10 +6383,11 @@ footer {
         background: #e1e1e1;
         display: inline-block;
         vertical-align: middle;
-        margin-right: 3px; }
+        margin-right: 4px; }
     footer .link-holder ul a {
       font-size: 12px;
-      color: #fff; }
+      color: #fff;
+      vertical-align: middle; }
 
 /* Preload images */
 body:after {
