@@ -6122,6 +6122,14 @@ button {
   cursor: pointer;
   padding: 0; }
 
+header {
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear; }
+  header.on-scroll {
+    background-color: #333; }
+    header.on-scroll .navbar {
+      margin: 0; }
+
 .inner {
   height: 100vh;
   background-image: url("../img/inner-bg.jpg");
@@ -6148,6 +6156,10 @@ button {
   -webkit-align-content: space-between;
       -ms-flex-line-pack: justify;
           align-content: space-between; }
+  @media (max-height: 600px) {
+    .inner {
+      height: auto;
+      padding-bottom: 50px; } }
   .inner .title {
     font-family: 'montserratregular'; }
   .inner p {
@@ -6176,6 +6188,8 @@ button {
     position: relative; }
     .standard-section .event-wrapper .event-item .event-item-img:hover .on-event-hover {
       opacity: 1; }
+    .standard-section .event-wrapper .event-item .event-item-img img {
+      width: 100%; }
     .standard-section .event-wrapper .event-item .event-item-img .on-event-hover {
       opacity: 0;
       background-color: rgba(0, 0, 0, 0.3);

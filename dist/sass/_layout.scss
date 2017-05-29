@@ -1,5 +1,15 @@
 @import "custom-variables";
 
+header {
+  transition: all .5s linear;
+  &.on-scroll {
+    background-color: #333;
+    .navbar {
+      margin: 0;
+    }
+  }
+}
+
 .inner{
   height: 100vh;
   background-image: url('../img/inner-bg.jpg');
@@ -12,6 +22,10 @@
   justify-content: center;
   flex-wrap: wrap;
   align-content: space-between;
+  @media (max-height: 600px) {
+    height: auto;
+    padding-bottom: 50px;
+  }
   .title{
     font-family: 'montserratregular';
   }
@@ -52,6 +66,9 @@
           .on-event-hover {
             opacity: 1;
           }
+        }
+        img {
+          width: 100%;
         }
         .on-event-hover {
           opacity: 0;
